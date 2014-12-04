@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.github.ggmoriyon</groupId>
+    <artifactId>malpelaxi_2.10</artifactId>
+    <packaging>jar</packaging>
+    <description>malpelaxi</description>
+    <version>1.0</version>
+    <name>malpelaxi</name>
+    <organization>
+        <name>io.github.ggmoriyon</name>
+    </organization>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.10.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-customsearch</artifactId>
+            <version>v1-rev45-1.19.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.clapper</groupId>
+            <artifactId>grizzled-slf4j_2.10</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.specs2</groupId>
+            <artifactId>specs2_2.10</artifactId>
+            <version>2.4.9</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.9.5</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>CTICreleases</id>
+            <name>CTIC releases</name>
+            <url>http://devit.fundacionctic.org:8081/nexus/content/repositories/private-releases/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>CTICsnapshots</id>
+            <name>CTIC snapshots</name>
+            <url>http://devit.fundacionctic.org:8081/nexus/content/repositories/private-snapshots/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>scalazrepo</id>
+            <name>scalaz repo</name>
+            <url>http://dl.bintray.com/scalaz/releases/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+</project>
